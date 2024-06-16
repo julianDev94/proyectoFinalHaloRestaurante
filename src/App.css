@@ -5,11 +5,11 @@
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
-  background: #f37701;
+  background: #f4801e;
 }
 
 .dropdown-menu.show {
-    background: #f37701;
+    background: #f4801e;
 }
 
 .group {
@@ -21,6 +21,8 @@
 }
 
 .iconosMenu{
-  border-bottom: 50%;
+  background: #20262f;
+  padding: 7px;
+  border-radius: 50%;
 }
 
