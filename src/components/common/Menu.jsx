@@ -34,20 +34,14 @@ const Menu = () => {
               <NavDropdown.Item href="#">Mi información</NavDropdown.Item>
               <NavDropdown.Item href="#">Pedidos</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#">
-              <div className="iconosMenu">
-                <i className="bi bi-cart4 iconosMenu"></i>
-              </div>
+            <Nav.Link href="#" className="mb-1">
+              <i className="bi bi-cart4 iconosMenu"></i>
             </Nav.Link>
-            <Nav.Link href="#">
-              <div className="iconosMenu">
-                <i className="bi bi-person-fill-add iconosMenu"></i>
-              </div>
+            <Nav.Link href="#" className="mb-1">
+              <i className="bi bi-person-fill-add iconosMenu"></i>
             </Nav.Link>
-            <Nav.Link href="#">
-              <div className="iconosMenu">
-                <i class="bi bi-whatsapp iconosMenu "></i>
-              </div>
+            <Nav.Link href="#" className="mb-1">
+              <i class="bi bi-whatsapp iconosMenu"></i>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
