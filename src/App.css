@@ -12,15 +12,24 @@
   font-size: 21px;
 }
 
-.backogroundFooter{
-  background: #1f262e;
-}
+
 
 /*
 ------------- FOOTER -------------
 */
 
+.estiloFooter{
+  background: #1f262e;
+  font-family: "Poppins", sans-serif;
+}
+
 .iconosFooterTamanio{
   font-size: 2rem;
+}
+
+@media all and (max-width: 767px){
+  .filaFooter{
+    display: block;
+  }
 }
 
