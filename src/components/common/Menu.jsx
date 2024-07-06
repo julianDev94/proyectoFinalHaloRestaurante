@@ -43,7 +43,7 @@ const Menu = () => {
               <i className="bi bi-person-fill-add iconosMenu"></i>
             </Nav.Link>
             <Nav.Link href="#" className="mb-1">
-              <i class="bi bi-whatsapp iconosMenu"></i>
+              <i className="bi bi-whatsapp iconosMenu"></i>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
