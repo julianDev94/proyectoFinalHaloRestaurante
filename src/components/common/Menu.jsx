@@ -34,7 +34,6 @@ const Menu = () => {
             </NavDropdown>
             <NavDropdown title="Usuario" className=" fs-5">
               <NavDropdown.Item href="#">Mi información</NavDropdown.Item>
-              <NavDropdown.Item href="#">Pedidos</NavDropdown.Item>
               <NavDropdown.Item href="#">Cerrar sesión</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" className="mb-1">
