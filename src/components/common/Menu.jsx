@@ -1,8 +1,9 @@
-import { Nav, Container, Navbar, NavDropdown, Button } from "react-bootstrap";
+import { Nav, Container, Navbar, NavDropdown } from "react-bootstrap";
 import Logo from "../../assets/FONDO BLANCO.svg";
+
 const Menu = () => {
   return (
-    <Navbar expand="lg" data-bs-theme="dark" className="py-1 fuenteMenu">
+    <Navbar expand="lg" data-bs-theme="dark" className="fuenteMenu">
       <Container className="d-flex justify-content-around">
         <Navbar.Brand href="#home" className="px-4">
           <img
@@ -29,10 +30,12 @@ const Menu = () => {
               <NavDropdown.Item href="#">Panel de productos</NavDropdown.Item>
               <NavDropdown.Item href="#">Listado de usuarios</NavDropdown.Item>
               <NavDropdown.Item href="#">Listado de pedidos</NavDropdown.Item>
+              <NavDropdown.Item href="#">Cerrar sesión</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Usuario" className=" fs-5">
               <NavDropdown.Item href="#">Mi información</NavDropdown.Item>
               <NavDropdown.Item href="#">Pedidos</NavDropdown.Item>
+              <NavDropdown.Item href="#">Cerrar sesión</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" className="mb-1">
               <i className="bi bi-cart4 iconosMenu"></i>
