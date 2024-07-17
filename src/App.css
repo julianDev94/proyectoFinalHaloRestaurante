@@ -12,3 +12,19 @@
   font-size: 21px;
 }
 
+
+
+/*
+------------- FOOTER -------------
+*/
+
+.estiloFooter{
+  background: #1f262e;
+  font-family: "Poppins", sans-serif;
+}
+
+.iconosFooterTamanio{
+  font-size: 2rem;
+}
+
+
