@@ -10,6 +10,7 @@
   flex-grow: 1;
 }
 
+/* --------------- MENÚ ---------------- */
 
 .fuenteMenu {
   font-family: "Poppins", sans-serif;
@@ -37,5 +38,57 @@
 .iconosFooterTamanio{
   font-size: 2rem;
 }
+
+
+/* ----------- INICIO ---------- */
+
+.sectionMain {
+  position: relative;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.bannerInicio {
+  width: 100%;
+  display: block;
+  height: 400px;
+  object-fit: cover;
+}
+
+.logoFondoBlanco {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.logoFondoBlanco img {
+  width: 100px;
+  height: auto;
+}
+
+/* Media query para dispositivos pequeños (sm) */
+@media (max-width: 576px) {
+  .logoFondoBlanco img {
+      width: 80px;
+  }
+}
+
+/* Media query para dispositivos medianos (md) */
+@media (max-width: 768px) and (min-width: 577px) {
+  .logoFondoBlanco img {
+      width: 90px;
+  }
+}
+
+
+
+
 
 
