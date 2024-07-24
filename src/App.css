@@ -74,6 +74,23 @@
   height: auto;
 }
 
+.carousel-novedades{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  padding: 1rem 1rem;
+  height: 100%;
+}
+
+.novedades-images{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  min-width: 50vw;
+    max-width: 50vw;
+}
+
 /* Media query para dispositivos pequeños (sm) */
 @media (max-width: 576px) {
   .logoFondoBlanco img {
