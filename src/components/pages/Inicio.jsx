@@ -1,5 +1,5 @@
 import logo from "../../assets/logoFondoBlanco.svg";
-import { Container, Image } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 const Inicio = () => {
   return (
@@ -26,13 +26,34 @@ const Inicio = () => {
           <h2 className="fw-bold">RESEÑAS DE CLIENTES</h2>
         </Container>
       </article>
-      <article className="text-center my-3 bg-primary">
-        <h2 className="text-light fw-bold">NOVEDADES</h2>
-        <Container className="carousel-novedades">
-            <div className="novedades-images"><Image src="https://d36fw6y2wq3bat.cloudfront.net/recipes/tostadas-de-naranja-con-pistachos/900/tostadas-de-naranja-con-pistachos_version_1712721714.jpg"></Image></div>
-            <div className="novedades-images"><Image src=""></Image></div>
-            <div className="novedades-images"><Image src=""></Image></div>
-            <div className="novedades-images"><Image src=""></Image></div>
+      <article className="text-center my-3 novedades-seccion">
+        <h2 className="text-light fw-bold py-3">NOVEDADES</h2>
+        <Container>
+          <div id="scrolling-buttons-container">
+            <span className="text-light fs-1 scrolling-button-left">
+              <i className="bi bi-chevron-left"></i>
+            </span>
+            <span className="text-light fs-1 scrolling-button-right">
+              <i className="bi bi-chevron-right"></i>
+            </span>
+          </div>
+          <div id="scrolling-container">
+            <div className="scrolling-image">
+              <img className="w-100 rounded" src="https://d36fw6y2wq3bat.cloudfront.net/recipes/bowl-de-avena-con-arandanos-platano-y-crema-de-cacahuete/900/bowl-de-avena-con-arandanos-platano-y-crema-de-cacahuete_version_1713499310.jpg" alt="Imagen de bowl de avena con arandanos, platano y crema de cacahuate" />
+            </div>
+            <div className="scrolling-image">
+              <img className="w-100 rounded" src="https://d36fw6y2wq3bat.cloudfront.net/recipes/tostada-de-queso-con-fresas-y-platano/900/tostada-de-queso-con-fresas-y-platano_version_1710993711.jpg"></img>
+            </div>
+            <div className="scrolling-image">
+              <img className="w-100 rounded" src="https://d36fw6y2wq3bat.cloudfront.net/recipes/tostadas-de-naranja-con-pistachos/900/tostadas-de-naranja-con-pistachos_version_1712721714.jpg"></img>
+            </div>
+            <div className="scrolling-image">
+              <img className="w-100 rounded" src="https://d36fw6y2wq3bat.cloudfront.net/recipes/tostadas-de-naranja-con-pistachos/900/tostadas-de-naranja-con-pistachos_version_1712721714.jpg"></img>
+            </div>
+            <div className="scrolling-image">
+              <img className="w-100 rounded" src="https://d36fw6y2wq3bat.cloudfront.net/recipes/tostadas-de-naranja-con-pistachos/900/tostadas-de-naranja-con-pistachos_version_1712721714.jpg"></img>
+            </div>
+          </div>
         </Container>
       </article>
     </section>
