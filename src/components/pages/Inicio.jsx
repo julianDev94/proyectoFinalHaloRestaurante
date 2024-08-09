@@ -1,23 +1,21 @@
 import { useEffect } from "react";
 import logo from "../../assets/logoFondoBlanco.svg";
-import { Container } from "react-bootstrap";
-
+import { Container, Card, Row, Col } from "react-bootstrap";
 
 const Inicio = () => {
+  useEffect(() => {
+    const btnLeft = document.querySelector("#scrolling-button-left");
+    const btnRight = document.querySelector("#scrolling-button-right");
+    const content = document.querySelector("#scrolling-container");
 
-  useEffect(()=>{
-    const btnLeft = document.querySelector('#scrolling-button-left');
-    const btnRight = document.querySelector('#scrolling-button-right');
-    const content = document.querySelector('#scrolling-container');
+    btnLeft.addEventListener("click", () => {
+      content.scrollLeft -= 800;
+    });
 
-    btnLeft.addEventListener('click',()=>{
-      content.scrollLeft -= 800
-    })
-
-    btnRight.addEventListener('click',()=>{
-      content.scrollLeft += 800
-    })
-  },[]);
+    btnRight.addEventListener("click", () => {
+      content.scrollLeft += 800;
+    });
+  }, []);
 
   return (
     <section className="sectionMain">
@@ -37,6 +35,30 @@ const Inicio = () => {
             alt="Imagen de plato de comida"
           />
         </div>
+      </article>
+      <article className="my-4">
+        <Container className="text-center">
+          <Row>
+            <Col>
+              <Card className="shadow-lg text-center border-0 h-100">
+                <Card.Body>
+                  <Card.Text className="fs-3 p-4">
+                    Descubre Halo, tu destino para disfrutar de deliciosos
+                    platos saludables y llenos de sabor. En nuestro restaurante,
+                    combinamos ingredientes frescos y nutritivos para ofrecerte
+                    opciones culinarias que no solo cuidan de tu bienestar, sino
+                    que también deleitan tu paladar. Desde bowls de
+                    superalimentos hasta platos gourmet, en Halo encontrarás una
+                    experiencia gastronómica que nutre cuerpo y alma.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col>
+              <img src="https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de Halo Restaurante" />
+            </Col>
+          </Row>
+        </Container>
       </article>
       <article className="text-center my-3">
         <Container>
@@ -85,7 +107,7 @@ const Inicio = () => {
             </div>
           </div>
           <div className="scrolling-button-container">
-          <span className="text-light fs-1" id="scrolling-button-right">
+            <span className="text-light fs-1" id="scrolling-button-right">
               <i className="bi bi-chevron-right"></i>
             </span>
           </div>
@@ -94,6 +116,5 @@ const Inicio = () => {
     </section>
   );
 };
-
 
 export default Inicio;
