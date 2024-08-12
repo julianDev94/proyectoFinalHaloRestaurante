@@ -39,9 +39,9 @@ const Inicio = () => {
       <article className="my-4">
         <Container className="text-center">
           <Row>
-            <Col>
-              <Card className="shadow-lg text-center border-0 h-100">
-                <Card.Body>
+            <Col sm={12} xl={6}>
+              <Card className="shadow-lg text-center border-0 h-100 rounded">
+                <Card.Body className="d-flex align-items-center">
                   <Card.Text className="fs-3 p-4">
                     Descubre Halo, tu destino para disfrutar de deliciosos
                     platos saludables y llenos de sabor. En nuestro restaurante,
@@ -54,15 +54,81 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
-              <img src="https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de Halo Restaurante" />
+            <Col sm={12} xl={6}>
+              <img
+                src="https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Imagen de Halo Restaurante"
+                className="w-100"
+              />
             </Col>
           </Row>
         </Container>
       </article>
-      <article className="text-center my-3">
+      <article className="text-center">
         <Container>
           <h2 className="fw-bold">RESEÑAS DE CLIENTES</h2>
+          <div className="scroll-container-resenias">
+            <div className="resenias shadow-lg my-3 p-3 w-50">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                expedita consequatur tempora. Id facilis natus, exercitationem
+                debitis distinctio magni magnam repellat labore ut similique
+                atque quod minima, ex mollitia fuga.
+              </p>
+              <div className="text-warning">
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <div className="resenias shadow-lg my-3 p-3 w-50">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Excepturi pariatur assumenda aliquid eum fugiat nobis nesciunt
+                tempora, perferendis amet maiores alias reiciendis, magni
+                officiis reprehenderit iste iusto sint, sit eos.
+              </p>
+              <div className="text-warning">
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <div className="resenias shadow-lg my-3 p-3 w-50">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                tempora dolor dicta quis nostrum a inventore unde, eum optio
+                ipsa nemo eius quisquam, esse voluptatum? Minima, itaque harum?
+                Similique, earum.
+              </p>
+              <div className="text-warning">
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <div className="resenias shadow-lg my-3 p-3 w-50">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                tempora dolor dicta quis nostrum a inventore unde, eum optio
+                ipsa nemo eius quisquam, esse voluptatum? Minima, itaque harum?
+                Similique, earum.
+              </p>
+              <div className="text-warning">
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
         </Container>
       </article>
       <article className="text-center my-3 novedades-seccion">
