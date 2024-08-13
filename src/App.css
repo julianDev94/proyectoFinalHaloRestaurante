@@ -73,6 +73,11 @@
 
 /* --------- RESENIAS -----------*/
 
+.container-resenias{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .scroll-container-resenias{
   display: flex;
   flex-direction: column;
