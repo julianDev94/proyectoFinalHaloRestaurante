@@ -1,41 +1,167 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-#root{
-  display:flex;
+#root {
+  display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
-.sectionMain{
+.sectionMain {
   flex-grow: 1;
 }
 
+/* --------------- MENÚ ---------------- */
 
 .fuenteMenu {
   font-family: "Poppins", sans-serif;
   background: #f4801e;
 }
 
-.iconosMenu{
+.iconosMenu {
   background: #20262f;
   padding: 10px;
   border-radius: 500px;
   font-size: 21px;
 }
 
-
-
 /*
 ------------- FOOTER -------------
 */
 
-.estiloFooter{
+.estiloFooter {
   background: #1f262e;
   font-family: "Poppins", sans-serif;
 }
 
-.iconosFooterTamanio{
+.iconosFooterTamanio {
   font-size: 2rem;
 }
 
+/* ----------- INICIO ---------- */
 
+.articuloBanner {
+  position: relative;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.bannerInicio {
+  width: 100%;
+  display: block;
+  height: 400px;
+  object-fit: cover;
+}
+
+.logoFondoBlanco {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.logoFondoBlanco img {
+  width: 100px;
+  height: auto;
+}
+
+/* --------- RESENIAS -----------*/
+
+.container-resenias{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.scroll-container-resenias{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 500px;
+}
+
+.resenias{
+  font-size: 22px;
+}
+
+/* ------------------------------- */
+
+/* --------- NOVEDADES --------- */
+
+#scrolling-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+.scrolling-button-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#scrolling-button-left{
+  display: flex;
+  align-items: center;
+}
+
+#scrolling-button-right{
+  display: flex;
+  align-items: center;
+}
+
+.scrolling-image {
+  flex: 0 0 auto;
+  margin: 10px;
+  height: 100%;
+  width: 450px;
+}
+
+#scrolling-container::-webkit-scrollbar{
+  display: none;
+}
+
+
+.scrolling-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.novedades-seccion {
+  background: rgb(31, 38, 46);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 38, 46, 1) 0%,
+    rgba(31, 38, 46, 1) 26%,
+    rgba(194, 201, 209, 1) 100%
+  );
+}
+
+/* ----------------------------- */
+
+
+
+/* Media query para dispositivos pequeños (sm) */
+@media (max-width: 576px) {
+  .logoFondoBlanco img {
+    width: 80px;
+  }
+}
+
+/* Media query para dispositivos medianos (md) */
+@media (max-width: 768px) and (min-width: 577px) {
+  .logoFondoBlanco img {
+    width: 90px;
+  }
+}
