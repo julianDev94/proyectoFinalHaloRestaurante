@@ -150,7 +150,25 @@
 
 /* ----------------------------- */
 
+/* ------------ COMPONENTE NOSOTROS ---------------- */
 
+.componente-Nosotros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(31, 38, 46);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 38, 46, 1) 0%,
+    rgba(31, 38, 46, 1) 26%,
+    rgba(194, 201, 209, 1) 100%
+  );
+}
+
+.card-Julian{
+  width: 19rem;
+}
+/* ------------------------------------- */
 
 /* Media query para dispositivos pequeños (sm) */
 @media (max-width: 576px) {
