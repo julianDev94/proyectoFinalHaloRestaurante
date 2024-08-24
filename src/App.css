@@ -165,14 +165,9 @@
   );
 }
 
-#card-Nosotros{
-  background: white;
-  width: 350px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  font-size: 17px;
+.card-Julian{
+  width: 19rem;
 }
-
 /* ------------------------------------- */
 
 /* Media query para dispositivos pequeños (sm) */
