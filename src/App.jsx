@@ -13,9 +13,9 @@ function App() {
   return (
     <>
       <Menu/>
-      {/*<Inicio></Inicio>*/}
+      <Inicio></Inicio>
       {/*<Nosotros/>*/}
-      <Error404 />
+      {/*<Error404 />*/}
       <Footer />
     </>
   )
